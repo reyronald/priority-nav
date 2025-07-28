@@ -9,13 +9,13 @@ function Navbar({ children }: PropsWithChildren) {
 
   return (
     <header className="flex h-16 w-full items-center border-b bg-background px-4 md:px-6">
-      <div className="hidden w-full items-center justify-between lg:flex">
+      <div className="hidden w-full items-center gap-8 lg:flex">
         <Link href={logoHref} className="flex items-center space-x-2">
           <Mountain className="h-6 w-6" />
           <span className="font-bold text-lg">{logoText}</span>
         </Link>
 
-        <nav className="flex items-center space-x-8">
+        <nav className="flex items-center  flex-grow space-x-8">
           {navigationItems.map((item) => (
             <Link
               key={item.href}
