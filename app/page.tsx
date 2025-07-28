@@ -1,14 +1,18 @@
-import Navbar from "./navbar"
+"use client"
+
+import { Navbar } from "./navbar"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar>
         <Navbar.Logo href="/">MyApp</Navbar.Logo>
+
         <Navbar.Item href="/about">About</Navbar.Item>
         <Navbar.Item href="/faq">FAQ</Navbar.Item>
         <Navbar.Item href="/contact">Contact</Navbar.Item>
         <Navbar.Item href="/services">Services</Navbar.Item>
+
         <Navbar.User>Jane Smith</Navbar.User>
       </Navbar>
 
@@ -25,11 +29,15 @@ export default function Home() {
             </div>
             <div className="p-6 border rounded-lg">
               <h2 className="text-xl font-semibold mb-2">Declarative API</h2>
-              <p className="text-muted-foreground">More readable and intuitive way to define navigation structure.</p>
+              <p className="text-muted-foreground">
+                More readable and intuitive way to define navigation structure.
+              </p>
             </div>
             <div className="p-6 border rounded-lg">
               <h2 className="text-xl font-semibold mb-2">Same Behavior</h2>
-              <p className="text-muted-foreground">All the responsive functionality remains exactly the same.</p>
+              <p className="text-muted-foreground">
+                All the responsive functionality remains exactly the same.
+              </p>
             </div>
           </div>
         </div>
